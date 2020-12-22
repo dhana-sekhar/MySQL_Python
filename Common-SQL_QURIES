@@ -1,0 +1,83 @@
+First we will go through an SQL Queries:
+
+
+    SELECT - extracts data from a database
+    UPDATE - updates data in a database
+    DELETE - deletes data from a database
+    INSERT INTO - inserts new data into a database
+    CREATE DATABASE - creates a new database
+    ALTER DATABASE - modifies a database
+    CREATE TABLE - creates a new table
+    ALTER TABLE - modifies a table
+    DROP TABLE - deletes a table
+    CREATE INDEX - creates an index (search key)
+    DROP INDEX - deletes an index
+
+
+Step 1: Create Database
+CREATE DATABASE mydatabase
+
+Step 2: Show Database
+SHOW DATABASES
+
+Step 3: Create a table in Database
+CREATE TABLE table_name (
+    column1 datatype,
+    column2 datatype,
+    column3 datatype,
+   ....
+);
+
+Ex:
+CREATE TABLE Persons (
+    id int,
+    program_type varchar(255),
+    question varchar(255),
+    answer varchar(255),
+    question_type varchar(255)
+);
+
+CREATE TABLE TestTable AS
+SELECT customername, contactname
+FROM customers; 
+
+Step 4: insert new records in a table
+INSERT INTO table_name
+VALUES (value1, value2, value3, ...);  
+
+
+
+Step 4: selects all the records in the table
+SELECT * FROM table_name; 
+
+Step 5: Drop table in Database
+DROP TABLE table_name;
+
+Step 6: delete the data inside a table, but not the table itself
+TRUNCATE TABLE table_name;
+
+Step 7: 
+(i) To add a column in a table
+ALTER TABLE table_name
+ADD column_name datatype; 
+
+Ex:
+ALTER TABLE Customers
+ADD Email varchar(255);
+
+(ii) To delete a column in a table. notice that some database systems don't allow deleting a column
+ALTER TABLE table_name
+DROP COLUMN column_name;
+
+Ex:
+ALTER TABLE Customers
+DROP COLUMN Email;
+
+
+(iii) To change the data type of a column in a table
+ALTER TABLE table_name
+ALTER COLUMN column_name datatype; 
+
+Ex:
+ALTER TABLE table_name
+MODIFY COLUMN column_name datatype; 

@@ -1,0 +1,17 @@
+Start by creating a connection to the database:
+
+step 1: import mysql-connector
+
+import mysql.connector
+
+step 2: Create Connection 
+Use the username and password from your MySQL database:
+
+mydb = mysql.connector.connect(
+  host="localhost",
+  user="yourusername",
+  passwd="yourpassword"
+)
+
+step 3: Run
+python demo_mysql_connection.py

@@ -1,0 +1,13 @@
+Step 1:Create Database Connection Object and using cursor() method to execute SQL Queries:
+
+mydb = mysql.connector.connect(host="localhost",user="yourusername",passwd="yourpassword")
+mycursor = mydb.cursor()
+
+Step 2: Create Database
+mycursor.execute("CREATE DATABASE database_name")
+
+Step 3: Show Database
+mycursor.execute("SHOW DATABASES")
+
+Step 4: Run 
+python demo_create_db.py

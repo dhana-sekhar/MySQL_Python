@@ -1,0 +1,22 @@
+Step 1: Directly connect Database
+
+mydb = mysql.connector.connect(
+  host="localhost",
+  user="root",
+  passwd="password",
+  database="interview_bot"
+)
+
+Step 2: Create Cursor object
+
+mycursor = mydb.cursor()
+
+Step 3: Select table in a database
+
+mycursor.execute("SELECT * FROM program_question_answer")
+
+Step 4: fetches all rows from the last executed statement.
+myresult = mycursor.fetchall()
+
+Step 5: Run
+python demo_select_table.py

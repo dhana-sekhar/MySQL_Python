@@ -1,0 +1,15 @@
+Step 1:
+SQL install:
+https://www.digitalocean.com/community/tutorials/how-to-install-mysql-on-ubuntu-16-04
+
+step 2:
+Install MySQL Driver:
+Python needs a MySQL driver to access the MySQL database.
+
+python -m pip install mysql-connector 
+
+step 3:
+Test the mysql-connector "import mysql.connector"
+
+python3 demo_mysql_test.py 
+
